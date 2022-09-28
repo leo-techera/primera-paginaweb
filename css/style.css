@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/** colores que voy a usar
+#401801
+#BF681B
+#BF8034
+#F2B544
+**/
+
+/** Fuentes
+font-family: 'Open Sans', sans-serif;
+font-family: 'Uchen', serif; **/
+
+/*header*/
+header {
+  width: 100%;
+  background: #401801;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+}
+div img {
+  width: 100px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navBar {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navBar li a:hover {
+  color: white;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #f2b544;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+/*botones de la lista de nav*/
+.botones {
+  padding-top: 20px;
+}
+.botones img {
+  width: 32px;
+}
+.buscador {
+  padding: 20px;
+  text-decoration: none;
+  color: #f2b544;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+section h1 {
+  font-family: Uchen;
+}
+section h2 {
+  font-family: Open Sans;
+}
+/*Main*/
+
+.banner {
+  background-image: linear-gradient(
+    to bottom,
+    #401801,
+    #56250b,
+    #6e3310,
+    #864214,
+    #9e5218,
+    #a95b1b,
+    #b4641e,
+    #bf6e21,
+    #bf7326,
+    #bf772a,
+    #bf7c2f,
+    #bf8034
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-shadow: 5px 6px 3px rgb(87, 86, 86);
+}
+
+/*section cards*/
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 20px;
+  text-align: center;
+}
+.containerCards {
+  background-color: #9e5218;
+  padding: 30px 0px;
+  margin-bottom: 50px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  /* si no le pongo el wrap y achico la pantalla el contenido no se acomoda */
+  gap: 50px 30px;
+  /* la propiedad gap sirve para separar contenido,
+  row-gap: 30px y column-gap: 20px serian la manera no abreviada */
+  justify-content: space-evenly;
+  /* justify-content: space-evenly da espacio enttre elementos */
+  align-items: center;
+  /* aling-item: center alinea los elementos en el medio */
+}
+.card {
+  width: 210px;
+  background-color: #bf7c2f;
+  height: 400px;
+  border-radius: 39px;
+  background: #BF8034;
+  box-shadow: 35px 35px 70px #845620, -35px -35px 70px #faa23e;
+  flex-basis: auto;
+  /* flex-basis especifíca la base flexible, la cual es
+el tamaño inicial de un elemento flexible. Ésta propiedad determina
+el tamaño de una caja de contenidos a no ser que se haya
+especificado de otra forma usando box-sizing */
+}
+.card img{
+  border-radius: 50%;
+  height: auto;
+}
+
+.flex-1{
+  flex-grow: 1;
+  /* Flex-grow
+Esta define la capacidad de un artículo flexible para crecer si es
+necesario. Acepta un valor sin unidades que sirve como proporción.
+Dicta la cantidad de espacio disponible dentro del contenedor
+flexible que debe ocupar el artículo.
+Si todos los elementos se han establecido en 1, el espacio restante
+del contenedor se distribuirá por igual a todos los hijos. Si uno de los
+hijos tiene un valor de 2, el espacio restante ocuparía el doble de
+espacio que los demás (o lo intentará, al menos). */
+}
+.flex-2{
+  flex-grow: 1;
+}
+.flex-3{
+  flex-shrink: 1;
+  /* flex-shrink especifica el factor de contracción de
+un flex item. Los flex items se encogerán para llenar el contenedor
+de acuerdo a su número flex-shrink , cuando el tamaño por defecto
+de los flex items sea mayor al de su contenedor flex container. */
+}
+.flex-4{
+  flex-shrink: 1;
+}
+.flex-5{
+  flex-grow: 1;
+}
+.flex-6{
+  flex-grow: 1;
+}
+
+
+/*footer*/
+footer {
+  height: 100%;
+  background-color: #401801;
+  padding: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+}
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.redes a {
+  font-size: 17px;
+  color: #f2b544;
+  text-decoration: none;
+}
+
+.redes a:hover {
+  color: white;
+}
+
+/**uso la fuente Open Sans para las otras paginas**/
+.bannerSecundarios {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #bf681b;
+  min-width: 100%;
+  width: 400px;
+  height: 400px;
+  color: #401801;
+  text-align: center;
+}
+
+.lista {
+  list-style-type: lower-roman;
+}
